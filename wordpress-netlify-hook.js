@@ -6,7 +6,6 @@ jQuery(document).ready(function() {
         //event handler for clicking the link button
         jQuery('#publish, #original_publish').on('click', function(e) {
 
-            // e.preventDefault()
             jQuery.ajax({
                 type: "POST",
                 url: 'https://api.netlify.com/build_hooks/[site specific code]', 
@@ -14,11 +13,8 @@ jQuery(document).ready(function() {
                     console.log(d)
                 }
             })
-
-
         })
     }
-    
 })
 
 
